@@ -9,6 +9,8 @@
 
 <p class="submit">
 <input type="submit" class="button-primary update" value="Обновить" />
+    <span class="dashicons dashicons-trash trash" style="font-size:28px;color:rosybrown;cursor:pointer;"></span>
+
 </p>
 <table class="form-table">
 <h1>Post Type</h1>

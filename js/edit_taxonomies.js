@@ -43,6 +43,9 @@ jQuery(document).ready(function($){
             select.append("<option>"+i+"</option>");
         });
         load_taxonomies();
+
+        //Все реквесты
+        //Обновляем
         $("form").submit(function(e){
             e.preventDefault();
             var post_type = select.find("option:selected").text();
@@ -53,6 +56,22 @@ jQuery(document).ready(function($){
             });
 
         });
+
+        //Удаляем
+        $(".trash").click(function(e){
+            e.preventDefault();
+            var key = select.find("option:selected").text();
+            var option = "builder_taxonomies";
+            var data = {option:option, key:key};
+            $.post("http://wc.dev/wp-admin/admin-ajax.php?action=builder_trash",data,function(response){
+                document.location.href='';
+                console.log(response);
+            });
+
+        });
+
+
+
         //При изменении селекта, грузим нужный пост тайп
         $("#types").on("change",load_taxonomies);
 

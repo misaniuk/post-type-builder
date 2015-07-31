@@ -28,8 +28,8 @@
       <file leaf-file-name="post-type-builder.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/post-type-builder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-160.91667" vertical-offset="1088" max-vertical-offset="5700">
-              <caret line="339" column="66" selection-start-line="339" selection-start-column="66" selection-end-line="339" selection-end-column="66" />
+            <state vertical-scroll-proportion="-7.1666665" vertical-offset="1433" max-vertical-offset="5910">
+              <caret line="116" column="24" selection-start-line="116" selection-start-column="24" selection-end-line="116" selection-end-column="24" />
               <folding>
                 <element signature="e#6#145#0#PHP" expanded="true" />
                 <element signature="n#builder_regiser_post_type#0;n#PostTypeBuilder#0;n#!!top" expanded="false" />
@@ -42,8 +42,8 @@
       <file leaf-file-name="edit_post_type.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/edit_post_type.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="600" max-vertical-offset="1695">
-              <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="1905">
+              <caret line="61" column="26" selection-start-line="61" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -52,8 +52,8 @@
       <file leaf-file-name="edit_taxonomies.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/edit_taxonomies.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4622496" vertical-offset="315" max-vertical-offset="1065">
-              <caret line="41" column="37" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.7457627" vertical-offset="506" max-vertical-offset="1350">
+              <caret line="66" column="27" selection-start-line="66" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -84,18 +84,19 @@
       <file leaf-file-name="edit_post_types.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/edit_post_types.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-27.5" vertical-offset="0" max-vertical-offset="1380">
-              <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+            <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="1410">
+              <caret line="11" column="30" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding>
-                <marker date="1438336612638" expanded="true" signature="470:1006" placeholder="..." />
-                <marker date="1438336612638" expanded="false" signature="494:521" placeholder="..." />
-                <marker date="1438336612638" expanded="false" signature="553:564" placeholder="..." />
-                <marker date="1438336612638" expanded="false" signature="607:615" placeholder="..." />
-                <marker date="1438336612638" expanded="false" signature="691:711" placeholder="..." />
-                <marker date="1438336612638" expanded="true" signature="712:834" placeholder="..." />
-                <marker date="1438336612638" expanded="false" signature="726:762" placeholder="..." />
-                <marker date="1438336612638" expanded="true" signature="838:1000" placeholder="..." />
-                <marker date="1438336612638" expanded="false" signature="852:888" placeholder="..." />
+                <element signature="n#style#0;n#span#0;n#p#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+                <marker date="1438352211599" expanded="true" signature="584:1120" placeholder="..." />
+                <marker date="1438352211599" expanded="false" signature="608:635" placeholder="..." />
+                <marker date="1438352211599" expanded="false" signature="667:678" placeholder="..." />
+                <marker date="1438352211599" expanded="false" signature="721:729" placeholder="..." />
+                <marker date="1438352211599" expanded="false" signature="805:825" placeholder="..." />
+                <marker date="1438352211599" expanded="true" signature="826:948" placeholder="..." />
+                <marker date="1438352211599" expanded="false" signature="840:876" placeholder="..." />
+                <marker date="1438352211599" expanded="true" signature="952:1114" placeholder="..." />
+                <marker date="1438352211599" expanded="false" signature="966:1002" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -104,9 +105,11 @@
       <file leaf-file-name="edit_taxonomies.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/edit_taxonomies.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="17.0" vertical-offset="558" max-vertical-offset="1170">
-              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-              <folding />
+            <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="1200">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#p#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -129,11 +132,11 @@
         <option value="$PROJECT_DIR$/view/new_post_type.php" />
         <option value="$PROJECT_DIR$/lib/HtmlRenderer.php" />
         <option value="$PROJECT_DIR$/js/create_post_type.js" />
-        <option value="$PROJECT_DIR$/view/edit_post_types.php" />
         <option value="$PROJECT_DIR$/view/new_taxonomy.php" />
         <option value="$PROJECT_DIR$/js/new_taxonomy.js" />
-        <option value="$PROJECT_DIR$/post-type-builder.php" />
+        <option value="$PROJECT_DIR$/view/edit_post_types.php" />
         <option value="$PROJECT_DIR$/view/edit_taxonomies.php" />
+        <option value="$PROJECT_DIR$/post-type-builder.php" />
         <option value="$PROJECT_DIR$/js/edit_post_type.js" />
         <option value="$PROJECT_DIR$/js/edit_taxonomies.js" />
       </list>
@@ -354,14 +357,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/edit_post_type.js</url>
-          <line>47</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="6" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -417,15 +413,16 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="421" max-vertical-offset="1380">
           <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
           <folding>
-            <marker date="1438336612638" expanded="true" signature="470:1006" placeholder="..." />
-            <marker date="1438336612638" expanded="false" signature="494:521" placeholder="..." />
-            <marker date="1438336612638" expanded="false" signature="553:564" placeholder="..." />
-            <marker date="1438336612638" expanded="false" signature="607:615" placeholder="..." />
-            <marker date="1438336612638" expanded="false" signature="691:711" placeholder="..." />
-            <marker date="1438336612638" expanded="true" signature="712:834" placeholder="..." />
-            <marker date="1438336612638" expanded="false" signature="726:762" placeholder="..." />
-            <marker date="1438336612638" expanded="true" signature="838:1000" placeholder="..." />
-            <marker date="1438336612638" expanded="false" signature="852:888" placeholder="..." />
+            <element signature="n#style#0;n#span#0;n#p#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+            <marker date="1438352211599" expanded="true" signature="584:1120" placeholder="..." />
+            <marker date="1438352211599" expanded="false" signature="608:635" placeholder="..." />
+            <marker date="1438352211599" expanded="false" signature="667:678" placeholder="..." />
+            <marker date="1438352211599" expanded="false" signature="721:729" placeholder="..." />
+            <marker date="1438352211599" expanded="false" signature="805:825" placeholder="..." />
+            <marker date="1438352211599" expanded="true" signature="826:948" placeholder="..." />
+            <marker date="1438352211599" expanded="false" signature="840:876" placeholder="..." />
+            <marker date="1438352211599" expanded="true" signature="952:1114" placeholder="..." />
+            <marker date="1438352211599" expanded="false" signature="966:1002" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -521,34 +518,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/view/edit_post_types.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-27.5" vertical-offset="0" max-vertical-offset="1380">
-          <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+        <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="1410">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
-            <marker date="1438336612638" expanded="true" signature="470:1006" placeholder="..." />
-            <marker date="1438336612638" expanded="false" signature="494:521" placeholder="..." />
-            <marker date="1438336612638" expanded="false" signature="553:564" placeholder="..." />
-            <marker date="1438336612638" expanded="false" signature="607:615" placeholder="..." />
-            <marker date="1438336612638" expanded="false" signature="691:711" placeholder="..." />
-            <marker date="1438336612638" expanded="true" signature="712:834" placeholder="..." />
-            <marker date="1438336612638" expanded="false" signature="726:762" placeholder="..." />
-            <marker date="1438336612638" expanded="true" signature="838:1000" placeholder="..." />
-            <marker date="1438336612638" expanded="false" signature="852:888" placeholder="..." />
+            <element signature="n#style#0;n#span#0;n#p#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+            <marker date="1438352211599" expanded="true" signature="584:1120" placeholder="..." />
+            <marker date="1438352211599" expanded="false" signature="608:635" placeholder="..." />
+            <marker date="1438352211599" expanded="false" signature="667:678" placeholder="..." />
+            <marker date="1438352211599" expanded="false" signature="721:729" placeholder="..." />
+            <marker date="1438352211599" expanded="false" signature="805:825" placeholder="..." />
+            <marker date="1438352211599" expanded="true" signature="826:948" placeholder="..." />
+            <marker date="1438352211599" expanded="false" signature="840:876" placeholder="..." />
+            <marker date="1438352211599" expanded="true" signature="952:1114" placeholder="..." />
+            <marker date="1438352211599" expanded="false" signature="966:1002" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/edit_taxonomies.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="17.0" vertical-offset="558" max-vertical-offset="1170">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-          <folding />
+        <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="1200">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#p#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/post-type-builder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-160.91667" vertical-offset="1088" max-vertical-offset="5700">
-          <caret line="339" column="66" selection-start-line="339" selection-start-column="66" selection-end-line="339" selection-end-column="66" />
+        <state vertical-scroll-proportion="-7.1666665" vertical-offset="1433" max-vertical-offset="5910">
+          <caret line="116" column="24" selection-start-line="116" selection-start-column="24" selection-end-line="116" selection-end-column="24" />
           <folding>
             <element signature="e#6#145#0#PHP" expanded="true" />
             <element signature="n#builder_regiser_post_type#0;n#PostTypeBuilder#0;n#!!top" expanded="false" />
@@ -559,16 +559,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/edit_post_type.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="600" max-vertical-offset="1695">
-          <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="1905">
+          <caret line="61" column="26" selection-start-line="61" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/edit_taxonomies.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4622496" vertical-offset="315" max-vertical-offset="1065">
-          <caret line="41" column="37" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.7457627" vertical-offset="506" max-vertical-offset="1350">
+          <caret line="66" column="27" selection-start-line="66" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -49,7 +49,21 @@ jQuery(document).ready(function($){
 			console.log(response);
 		});
 
+
 	});
+
+        //Удаляем
+        $(".trash").click(function(e){
+            e.preventDefault();
+            var key = select.find("option:selected").text();
+            var option = "builder_post_types";
+            var data = {option:option, key:key};
+            $.post("http://wc.dev/wp-admin/admin-ajax.php?action=builder_trash",data,function(response){
+                document.location.href='';
+                console.log(response);
+            });
+
+        });
 	//При изменении селекта, грузим нужный пост тайп
 	$("#types").on("change",load_post_type);
 

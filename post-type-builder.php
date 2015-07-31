@@ -81,12 +81,18 @@ class PostTypeBuilder {
 		add_action("wp_ajax_update_builder_post_types",array($this,"update_builder_post_types"));
 		add_action("wp_ajax_nopriv_update_builder_post_types",array($this,"update_builder_post_types"));
 
+
 		add_action("wp_ajax_edit_builder_post_type",array($this,"edit_builder_post_type"));
 		add_action("wp_ajax_nopriv_edit_builder_post_type",array($this,"edit_builder_post_type"));
 
 		add_action("wp_ajax_new_taxonomy",array($this,"new_taxonomy"));
 		add_action("wp_ajax_nopriv_new_taxonomy",array($this,"new_taxonomy"));
 		add_action("admin_menu",array($this,"add_plugin_menu"));
+
+        //trash
+        add_action("wp_ajax_builder_trash",array($this,"builder_trash"));
+        add_action("wp_ajax_nopriv_builder_trash",array($this,"builder_trash"));
+
 	}
 
 
@@ -104,6 +110,14 @@ class PostTypeBuilder {
 		}
 	}		
 
+    public function builder_trash() {
+        $data = $_POST;
+        $option  = $data['option'];
+        $key  = $data['key'];
+        $array = unserialize(get_option($option));
+        unset($array[$key]);
+        update_option($option,serialize($array));
+    }
 
 
 
