@@ -15,12 +15,14 @@ class PostTypeBuilder {
 	public $plugin_name = "Post Type Builder";
 	public $plugin_icon = "dashicons-edit";
 	public $menu_pages = array("Новый Post Type","Настройки");
-
+    public $defaults = array();
 	public function __construct() {
-		add_action("init",array($this, "init"));
+        add_action("init",array($this, "init"));
 	}
 
 	public function init() {
+        $this->defaults['nounce'] = wp_create_nonce('builder');
+        $this->defaults['admin_url'] = admin_url();
 		if (!get_option("builder_post_types")) {
 			add_option( "builder_post_types");
 		}
@@ -37,7 +39,8 @@ class PostTypeBuilder {
 
 		if(@$_GET['page'] == 'new_post_type') {
 			wp_register_script( "create_post_type",plugins_url()."/post-type-builder/js/create_post_type.js",'jQuery',false, true );
-			wp_enqueue_script("create_post_type");
+            wp_localize_script( "create_post_type", "builder_defaults", $this->defaults);
+            wp_enqueue_script("create_post_type");
             add_action('admin_enqueue_scripts', function() {
                 wp_enqueue_media();
                 $css = plugin_dir_url( __FILE__ ) . 'css/dashicons-picker.css';
@@ -53,7 +56,8 @@ class PostTypeBuilder {
 		if(@$_GET['page'] == 'edit_post_types') {
 			wp_register_script( "edit_post_type",plugins_url()."/post-type-builder/js/edit_post_type.js",'jQuery',false, true );
 			wp_localize_script( "edit_post_type", "builder_post_types", unserialize(get_option("builder_post_types")) );
-			wp_enqueue_script("edit_post_type");
+            wp_localize_script( "edit_post_type", "builder_defaults", $this->defaults);
+            wp_enqueue_script("edit_post_type");
 			add_action('admin_enqueue_scripts', function() {
 				wp_enqueue_media();
 			    $css = plugin_dir_url( __FILE__ ) . 'css/dashicons-picker.css';
@@ -68,13 +72,15 @@ class PostTypeBuilder {
 		if(@$_GET['page'] == 'new_taxonomy') {
 			wp_register_script( "new_taxonomy",plugins_url()."/post-type-builder/js/new_taxonomy.js",'jQuery',false, true );
 			wp_localize_script( "new_taxonomy", "builder_taxonomies", unserialize(get_option("builder_taxonomies")) );
-			wp_enqueue_script("new_taxonomy");
+            wp_localize_script( "new_taxonomy", "builder_defaults", $this->defaults);
+            wp_enqueue_script("new_taxonomy");
 		}
 
 		if(@$_GET['page'] == 'edit_taxonomies') {
 			wp_register_script( "edit_taxonomies",plugins_url()."/post-type-builder/js/edit_taxonomies.js",'jQuery',false, true );
 			wp_localize_script( "edit_taxonomies", "builder_taxonomies", unserialize(get_option("builder_taxonomies")) );
-			wp_enqueue_script("edit_taxonomies");
+            wp_localize_script( "edit_taxonomies", "builder_defaults", $this->defaults);
+            wp_enqueue_script("edit_taxonomies");
 		}
 
 
@@ -105,12 +111,13 @@ class PostTypeBuilder {
 	}	
 
 	public function builder_regiser_taxonomies() {
-			foreach(unserialize(get_option("builder_taxonomies")) as $key=>$val) {
+        foreach(unserialize(get_option("builder_taxonomies")) as $key=>$val) {
 			register_taxonomy($val[0],$val[1],$val[2]);
 		}
 	}		
 
     public function builder_trash() {
+        check_ajax_referer("builder");
         $data = $_POST;
         $option  = $data['option'];
         $key  = $data['key'];
@@ -122,7 +129,7 @@ class PostTypeBuilder {
 
 
 	public function update_builder_post_types() {
-
+        check_ajax_referer("builder");
         //Проверяем наш массив POST на неправильные символы (sanitize_text_field() )
         //Проверям на пустоту все значения в переданном массиве required
         $val = $this->check_post_values(array("post_type"));
@@ -219,6 +226,7 @@ class PostTypeBuilder {
 	}
 
 	public function new_taxonomy() {
+        check_ajax_referer("builder");
         $t = $this->check_post_values(array("taxonomy",array("object_type" => get_post_types())),"new_taxonomy");
 		$taxonomies = (get_option("builder_taxonomies") == '') ? array() : unserialize(get_option("builder_taxonomies"));
 

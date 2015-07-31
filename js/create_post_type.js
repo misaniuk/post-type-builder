@@ -2,8 +2,9 @@ jQuery(document).ready(function($){
 	$("form").submit(function(e){
 		e.preventDefault();
 		var data = $(this).serialize();
+        var admin_url = builder_defaults['admin_url'];
 		console.log(data);
-		$.post("http://wc.dev/wp-admin/admin-ajax.php?action=update_builder_post_types",data,function(response){
+		$.post(admin_url+"admin-ajax.php?action=update_builder_post_types",data,function(response){
 			document.location.href=response;
 			console.log(response);
 		});

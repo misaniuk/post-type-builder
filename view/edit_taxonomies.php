@@ -60,6 +60,7 @@ foreach(array(
 	array('sort',true)
 	 ) as $value) {
 Html::Bool($value[0],$value[0],$value[1]);
+    Html::Nonce();
 }
 
 

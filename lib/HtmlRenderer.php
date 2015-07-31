@@ -72,6 +72,10 @@ class Html{
 
 	}
 
+    public static function Nonce() {
+        wp_nonce_field("builder");
+    }
+
 }
 
 ?>

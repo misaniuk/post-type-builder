@@ -44,7 +44,8 @@ jQuery(document).ready(function($){
 		e.preventDefault();
 		var post_type = select.find("option:selected").text();
 		var data = $(this).serialize();
-		$.post("http://wc.dev/wp-admin/admin-ajax.php?action=update_builder_post_types",data,function(response){
+        var admin_url = builder_defaults['admin_url'];
+		$.post(admin_url+"admin-ajax.php?action=update_builder_post_types",data,function(response){
 			document.location.href=response;
 			console.log(response);
 		});
@@ -57,8 +58,9 @@ jQuery(document).ready(function($){
             e.preventDefault();
             var key = select.find("option:selected").text();
             var option = "builder_post_types";
-            var data = {option:option, key:key};
-            $.post("http://wc.dev/wp-admin/admin-ajax.php?action=builder_trash",data,function(response){
+            var data = {option:option, key:key,_wpnonce:$("#_wpnonce").val()};
+            var admin_url = builder_defaults['admin_url'];
+            $.post(admin_url+"admin-ajax.php?action=builder_trash",data,function(response){
                 document.location.href='';
                 console.log(response);
             });
