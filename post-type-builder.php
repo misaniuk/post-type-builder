@@ -228,6 +228,12 @@ class PostTypeBuilder {
 	public function new_taxonomy() {
         check_ajax_referer("builder");
         $t = $this->check_post_values(array("taxonomy",array("object_type" => get_post_types())),"new_taxonomy");
+                //Проверяем на правильность taxonomy
+        $reg = '/^([A-Za-z_])\w+$/';
+        if(!preg_match($reg,$t['taxonomy'])) {
+        	wp_send_json(admin_url("admin.php?page=new_taxonomy&error_msg=Название таксономии не может содеражать этот символ!"));
+        }                    
+
 		$taxonomies = (get_option("builder_taxonomies") == '') ? array() : unserialize(get_option("builder_taxonomies"));
 
 		$object_type = array();
@@ -334,7 +340,6 @@ class PostTypeBuilder {
 
 
     public function check_post_values($required,$redirect = "new_post_type") {
-
         $data = $_POST;
         //Чекаем все
         foreach($data as $key=>$val) {
@@ -347,7 +352,6 @@ class PostTypeBuilder {
         }
         //Чекаем только required
         foreach($required as $val) {
-            $error_msg = "Поле {$val} обязательно к заполнению";
 
             if(is_array($val)) {
                 //Кол-во выбраных полей в обязательном разделе
@@ -365,7 +369,8 @@ class PostTypeBuilder {
                 }
             }
             else {
-                if(empty($data[$val])) {
+                if(!isset($data[$val])) {
+                	$error_msg = "Поле {$val} обязательно к заполнению";
                     wp_send_json(admin_url("admin.php?page={$redirect}&error_msg={$error_msg}"));
                 }
             }
